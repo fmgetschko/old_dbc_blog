@@ -1,0 +1,77 @@
+html{
+  background-color: #f2f2f2;
+}
+
+.header{
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: auto;
+  vertical-align: middle;
+}
+
+.button{
+display: inline-block;
+margin: 0% 8% 0% 8%;
+padding: 1%;
+border: 1px solid #b2b2b2;
+width: 80px;
+position: static;
+background-color: white;
+border-radius: 15%;
+font-weight: bold;
+font-family: Tahoma, serif;
+}
+
+.post{
+
+  margin-left: 10%;
+  display: inline-block;
+  width: 80%;
+  font-family: cursive;
+  /*float: right;*/
+}
+
+.image{
+  margin-top: 2%;
+  margin-left: 5%;
+  display: inline-block;
+  float: left;
+}
+
+.border{
+  margin-left: 5%;
+  margin-top: 4%;
+  border: 1px solid #b2b2b2;
+  width: 72%;
+  float: left;
+  background-image: url("../blank_notebook_paper_2.jpg");
+  /*background-color: white;*/
+}
+
+.column{
+  margin-right: 5%;
+  margin-top: 5%;
+  padding-right: 2%;
+  float: right;
+  /*border: 1px dashed black;*/
+  width: 10%;
+  font-family: Tahoma, serif;
+}
+
+h4{
+  text-decoration: underline;
+}
+
+h1{
+  font-size: 26px;
+  margin-bottom: -3%;
+  margin-top: 0.5%;
+}
+
+h3{
+  margin-bottom: -3%;
+}
+
+p{
+  padding-top: 0.5%;
+}
