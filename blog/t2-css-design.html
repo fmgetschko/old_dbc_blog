@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <title>Fernanda M. M. Getschko</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow:400,700|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+</head>
+
+<header class="header">
+
+<img class="imgtopbar" src="../fmgets.jpg"/>
+<p class="topbar">Fernanda Martins Marques Getschko</p>
+<p class="button"><a href="./c1-chefs-kitchen.html">Blog</a></p>
+<p class="button"><a href="../index.html">About Me</a></p>
+
+</header>
+
+<main>
+
+<section class="border">
+
+  <section class="post">
+    <!-- Put title on h1, subtitle on h2 and date on h4-->
+    <h1>IDs vs Classes</h1>
+    <h3>Do you want to get specific or general?</h3>
+    <h4 id="date">March 8th, 2015</h4>
+    <!--Put content here-->
+    <p>I’m just starting to explore this magical world of CSS. It’s impressive how much can be done by it and how lean and effective style got after CSS. Still, sometimes CSS can be confusing (at least for beginners, like me!). One good example of it refers to the use of IDs and Classes.</p>
+    <p>At first, Classes and IDs may seem disturbingly similar, if not the same thing. After all, by adding a class or an id to a tag, it is possible to define specific styles to the class/ id on your CSS stylesheet, and it will be automatically applied to that tag. So, if both accomplish to style your tag with the elements you wish, what’s the difference between them?</p>
+    <p>The difference is about specificity. Classes are designed to be used in several elements, as a set of style rules that you may want to apply in multiple tags. IDs, instead, are unique. They are designed to reference one single element, and shouldn’t be repeated in any other tags in your HTML. They can even be used together, in the same tag, if you wish to!.</p>
+    <p>Also, IDs have an special feature that you can’t find in Classes. By using IDs, you can set a scroll browser functionality, that is pretty cool. Imagine that you have a website http://mywebsite.com. If you have set up a tag with an ID, for example 'div id=“unique_id”', you can scroll to this element by using the URL http://mywebsite.com#unique_id. Isn’t it awesome?</p>
+    <p>In short, to guarantee you’ll never confuse it again, keep in mind: IDs are unique, Classes are general. Just memorize that, and you’ll hit it overtime!</p>
+
+  </section>
+</section>
+
+<section class="column">
+
+<p id="list-title">Check these out, too!</p>
+  <ul>
+    <li class="postlist"><a href="./c1-chefs-kitchen.html">On the boat</a></li>
+  <li class="postlist"><a href="./t1-git-blog.html">Empowering group productivity</a></li>
+  <li class="postlist"><a href="./t2-css-design.html">IDs vs Classes</a></li>
+  </ul>
+
+</section>
+
+<footer class="footer">
+
+  <a href="https://github.com/fmgetschko"><img class= "social" src="../logos/GitHub-Mark-64px.png"/></a>
+  <a href="https://www.linkedin.com/profile/view?id=88006164&trk=nav_responsive_tab_profile_pic"><img class= "social" src="../logos/linkedin.svg"/></a>
+  <a href="https://twitter.com/FGetschko"><img class= "social" src="../logos/Twitter bird white blue.png"/></a>
+  <a id="mail" href="mailto:f.martins.marques@gmail.com">f.martins.marques@gmail.com</a>
+
+</footer>
