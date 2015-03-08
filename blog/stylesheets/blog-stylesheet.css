@@ -1,77 +1,76 @@
-html{
-  background-color: #f2f2f2;
-}
 
-.header{
-  text-align: center;
-  margin-top: 2%;
-  margin-bottom: auto;
-  vertical-align: middle;
-}
-
-.button{
-display: inline-block;
-margin: 0% 8% 0% 8%;
-padding: 1%;
-border: 1px solid #b2b2b2;
-width: 80px;
-position: static;
-background-color: white;
-border-radius: 15%;
-font-weight: bold;
-font-family: Tahoma, serif;
-}
-
-.post{
-
-  margin-left: 10%;
-  display: inline-block;
-  width: 80%;
-  font-family: cursive;
-  /*float: right;*/
-}
-
-.image{
-  margin-top: 2%;
-  margin-left: 5%;
-  display: inline-block;
-  float: left;
-}
-
+/* POST STYLE AND POSITION */
 .border{
   margin-left: 5%;
   margin-top: 4%;
-  border: 1px solid #b2b2b2;
-  width: 72%;
+  margin-bottom: 4%;
+  position: static;
+  top:15%;
+  border: 1px solid #eaeaea;
+  width: 65%;
   float: left;
   background-image: url("../blank_notebook_paper_2.jpg");
-  /*background-color: white;*/
 }
 
-.column{
-  margin-right: 5%;
-  margin-top: 5%;
-  padding-right: 2%;
-  float: right;
-  /*border: 1px dashed black;*/
-  width: 10%;
-  font-family: Tahoma, serif;
+.post{
+  margin-left: 11%;
+  display: inline-block;
+  width: 80%;
+  font-family: "Shadows into light two";
+  padding-top: 1.1%;
 }
 
-h4{
-  text-decoration: underline;
-}
 
+/*TITLE STYLE*/
 h1{
   font-size: 26px;
-  margin-bottom: -3%;
-  margin-top: 0.5%;
+  padding: 0%;
+  margin: -0.5%;
+  color: #565eb2;
 }
 
 h3{
-  margin-bottom: -3%;
+  margin: 0%;
+  color: #565eb2;
 }
 
+#date{
+  text-decoration: underline;
+  margin: 0%;
+  color: #565eb2;
+  font-size: 13px;
+}
+
+/* CONTENT STYLE */
+
+
 p{
-  padding-top: 0.5%;
+  padding-top: 1.8%;
+}
+
+/* SIDEBAR STYLE */
+.column{
+  position: absolute;
+  top:20%;
+  right: 0%;
+  padding-right: 5%;
+  float: right;
+  width: 20%;
+  text-align: center;
+}
+
+.postlist{
+list-style-type: none;
+border:1px solid #BFC5FF;
+border-radius: 2px;
+box-shadow:0 3px 0 #565eb2;
+background-color: #e2e4ff;
+padding: 2%;
+margin-bottom: 5%;
+}
+
+#list-title{
+  color:#cca063;
+  font-size: 20px;
+  padding-left: 10%;
 }

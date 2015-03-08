@@ -1,0 +1,46 @@
+.aboutme{
+  position:static;
+  top: 15%;
+  width: 100%;
+  padding:2%;
+  margin-bottom: 36%;
+
+}
+
+.image{
+  float: left;
+  display: inline-block;
+  border: 0.07em solid #b29b45;
+  width: 33%;
+  border-radius: 10%;
+  padding:1%;
+}
+
+.content{
+position: absolute;
+left: 40%;
+width: 50%;
+}
+
+.contact{
+position: absolute;
+border-top:1px solid #b29b45;
+top:75%;
+left: 40%;
+width: 60%;
+}
+
+.content p{
+  font-family: "Shadows into light two";
+}
+
+#contact-mail{
+  float: right;
+  margin-top:1.5%;
+margin-right: 4%;
+}
+
+.contact p{
+  margin: 0%;
+  padding: 0.5%;
+}

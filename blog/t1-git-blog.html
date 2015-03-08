@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <head>
-  <title>Your page title here</title>
+  <title>Fernanda M. M. Getschko</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow:400,700|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
 </head>
 
-<main>
-  <h1>Empowering your collective productivity</h1>
-  <h2>How version control, git and GitHub can make your life easier</h2>
-  <h4>Feb 26, 2015</h4>
+<header class="header">
 
-  <section>
-    <p>
-      As a business consultant, it wasn’t rare to spend nights up working on spreadsheets and powerpoint presentations. And, not rarely too, after spending hours working in a huge analysis…. bang! Excel just stopped working! Invariantly (even though Excel has an autosave feature), hours of work were waisted and I had to start all over again (and remembering how to structure your analysis again from scratch at 2am is not always that easy!). But what if, for each step of the analysis I evolved, I could just save a snapshot of it, controlling what’s been achieved so far? And, if something went wrong, or I didn’t like the results of my current iteration, I could then just roll back to my previous state, effortlessly?
-    </p>
-    <p>
-      The version control tool git does it, and more! Working with a tree structure, git defines a ‘master’ version of your document, from which you can derive as many branches as you need to keep working. Each branch starts as an identical copy of your master, and you’re free to make any changes you want to it without affecting master. Once you’ve come to a point worth ‘saving’, you can merge your changes back to the master, specifying what’s been made. All versions of this master document are preserved, and if you need to come back to any of them, you can simply do that by hitting one command line.
-    </p>
-    <p>
-      And if you have a team working in this same document, it gets even better. For collaborative work, git works beautifully along with GitHub. GitHub is a remote repository to which all your team can have access. The master will always be the most up to date version of the team’s work. Each person of the team will work on their part from their own (local) branch, and once they’re finished, they’ll merge their improvements to team’s (remote) master. The newest version of the document is already available to all the team to sync and keep working!
-    </p>
+<img class="imgtopbar" src="../fmgets.jpg"/>
+<p class="topbar">Fernanda Martins Marques Getschko</p>
+<p class="button"><a href="./c1-chefs-kitchen.html">Blog</a></p>
+<p class="button"><a href="../index.html">About Me</a></p>
+
+</header>
+
+<main>
+
+<section class="border">
+
+  <section class="post">
+    <!-- Put title on h1, subtitle on h2 and date on h4-->
+    <h1>Empowering your collective productivity</h1>
+    <h3>How version control, git and GitHub can make your life easier</h3>
+    <h4 id="date">Feb 26, 2015</h4>
+    <!--Put content here-->
+    <p>As a business consultant, it wasn’t rare to spend nights up working on spreadsheets and powerpoint presentations. And, not rarely too, after spending hours working in a huge analysis…. bang! Excel just stopped working! Invariantly (even though Excel has an autosave feature), hours of work were waisted and I had to start all over again (and remembering how to structure your analysis again from scratch at 2am is not always that easy!). But what if, for each step of the analysis I evolved, I could just save a snapshot of it, controlling what’s been achieved so far? And, if something went wrong, or I didn’t like the results of my current iteration, I could then just roll back to my previous state, effortlessly?</p>
+    <p>The version control tool git does it, and more! Working with a tree structure, git defines a ‘master’ version of your document, from which you can derive as many branches as you need to keep working. Each branch starts as an identical copy of your master, and you’re free to make any changes you want to it without affecting master. Once you’ve come to a point worth ‘saving’, you can merge your changes back to the master, specifying what’s been made. All versions of this master document are preserved, and if you need to come back to any of them, you can simply do that by hitting one command line.</p>
+    <p>And if you have a team working in this same document, it gets even better. For collaborative work, git works beautifully along with GitHub. GitHub is a remote repository to which all your team can have access. The master will always be the most up to date version of the team’s work. Each person of the team will work on their part from their own (local) branch, and once they’re finished, they’ll merge their improvements to team’s (remote) master. The newest version of the document is already available to all the team to sync and keep working!</p>
     <p>
       Moreover, if you want to maintain your project the highest level, there’s another amazing feature that GitHub provides: instead of directly merging your improvements to the project, you can instead ask for someone in the group to revise it for you. This is really useful not only as a double check, but also to keep the group always aware of how project’s growing and evolving overall.
     </p>
     <p>
       If you’re interested in trying this miracle out, I would suggest you to take a look at this <a href=https://help.github.com/articles/set-up-git/>quick guide</a> GitHub provides to set up git and GitHub and enjoy this beauty. Good luck!
     </p>
-      <!-- copy and paste as many sections as you want to add paragraphs -->
+
   </section>
+</section>
+
+<section class="column">
+
+<p id="list-title">Check these out, too!</p>
+  <ul>
+    <li class="postlist"><a href="./c1-chefs-kitchen.html">On the boat</a></li>
+  <li class="postlist"><a href="./t1-git-blog.html">Empowering group productivity</a></li>
+  </ul>
+
+</section>
+
+<footer class="footer">
+
+  <a href="https://github.com/fmgetschko"><img class= "social" src="../logos/GitHub-Mark-64px.png"/></a>
+  <a href="https://www.linkedin.com/profile/view?id=88006164&trk=nav_responsive_tab_profile_pic"><img class= "social" src="../logos/linkedin.svg"/></a>
+  <a href="https://twitter.com/FGetschko"><img class= "social" src="../logos/Twitter bird white blue.png"/></a>
+  <a id="mail" href="mailto:f.martins.marques@gmail.com">f.martins.marques@gmail.com</a>
+
+</footer>
+
+
 </main>

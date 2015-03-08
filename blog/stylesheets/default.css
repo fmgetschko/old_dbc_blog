@@ -1,0 +1,100 @@
+html{
+  background-color: #ffffff;
+  color: #71727F;
+  font-family: "PT Sans";
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+/*HEADER STYLE AND POSITION*/
+
+.header{
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  position: static;
+  height: 15%;
+  display: inline-block;
+  background-color: #BFC5FF;
+  top:0%;
+  right: 0%;
+}
+
+.topbar{
+  display: inline-block;
+  float: left;
+  position: static;
+  margin:0.75% 1% 0% 0%;
+  padding: 2%;
+  font-size: 20px;
+}
+
+.imgtopbar{
+  display: inline-block;
+  float: left;
+  border-radius: 50%;
+  width: 5%;
+  margin-left: 2%;
+  margin-top: 0.75%;
+  margin-bottom: 0.25%;
+  padding: 0%;
+}
+
+.button{
+display: inline-block;
+margin-right: 8%;
+margin-top: 1.75%;
+padding: 1% 0.2% 0% 0.2%;
+float: right;
+border-bottom: 1px solid #b29b45;
+position: static;
+font-family: "PT Sans";
+}
+
+ a:link {
+    text-decoration: none;
+}
+ a:visited {
+    text-decoration: none;
+}
+
+ a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*FOOTER STYLE AND POSITION*/
+
+.footer{
+position: static;
+display: inline-block;
+width: 100%;
+top:93.5%;
+left:0%;
+background-color: #ffe895;
+padding-left: 1%;
+}
+
+.social{
+  width: 40px;
+  height: 40px;
+  position: relative;
+margin-left:0.5%;
+padding-top: 0.2%;
+}
+
+#mail{
+position: relative;
+  float: right;
+  padding-top: 1%;
+padding-right: 4%;
+}
