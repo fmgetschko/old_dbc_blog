@@ -1,7 +1,7 @@
 .aboutme{
   position:static;
   top: 15%;
-  width: 100%;
+  width: 96%;
   padding:2%;
   margin-bottom: 36%;
 
@@ -17,17 +17,22 @@
 }
 
 .content{
-position: absolute;
-left: 40%;
-width: 50%;
+/*position: absolute;
+left: 40%;*/
+width: 55%;
+float: right;
+padding-right:5%;
 }
 
 .contact{
-position: absolute;
+/*position: absolute;*/
 border-top:1px solid #b29b45;
-top:75%;
-left: 40%;
+/*top:90%;
+left: 40%;*/
 width: 60%;
+float: right;
+clear: both;
+margin-top:15px;
 }
 
 .content p{
