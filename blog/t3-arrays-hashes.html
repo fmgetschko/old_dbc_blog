@@ -27,13 +27,13 @@
     <h4 id="date">March 14, 2015</h4>
     <!--Put content here-->
     <p>So, this is the end of our third week of Phase 0 in DBC. By now, we’re being introduced to Ruby world by working the basic variable types and operations. At this point, some variable types may seem very similar, and we may ask ourselves: “but why the hell did they create those two?”.  A common example of types that cause this type of reaction is when we consider <strong>Arrays</strong> and <strong>Hashes</strong>. Both arrays and hashes are variable types that store collections of objects. Also, in both cases, we access objects by keys. Still, there are several aspects that differentiate these two variable types.</p>
-    <p>When it comes to <strong>Arrays</strong>, keys don’t have to be defined on code, and they are always integers, starting on 0. Because of this characteristic, arrays are commonly defined as ordered lists. This means that, every time you need to store a collection of ordered data, you should use an array. A simple example would be, for example, to have an array that stores the days of the week:
-    <code> weekdays = %w[ Sunday Monday Tuesday Wednesday Thursday Friday Saturday]</code>
-    Whenever you want to refer to any of the weekdays, you can use their keys, i.e., their position in the array (remembering that our first spot is always position 0).
+    <p>When it comes to <strong>Arrays</strong>, keys don’t have to be defined on code, and they are always integers, starting on 0. Because of this characteristic, arrays are commonly defined as ordered lists. This means that, every time you need to store a collection of ordered data, you should use an array. A simple example would be, for example, to have an array that stores the days of the week:<br><br>
+    <code> weekdays = %w[Sunday Monday Tuesday Wednesday Thursday Friday Saturday]</code> <br><br>
+    Whenever you want to refer to any of the weekdays, you can use their keys, i.e., their position in the array (remembering that our first spot is always position 0).<br><br>
     <code> >> weekdays[2] <br> =>”Tuesday” </code></p>
-    <p>When we talk about <strong>Hashes</strong>, keys are defined on code and may be any object you want to. This means that hashes are, by default, unordered lists (of course you can order them, using code, if you need to). They are very useful when you need to reference values to information that can make you easily access them. In my researches, I’ve seen a pretty didactic example of hash usage. Imagine you create a hash to store hexadecimal values of colors:
-    <code> hexacolors = { ‘Red' => #FF0000 , ‘Blue’ => #0000FF , ‘Black' => #000000 , ‘White’ => #FFFFFF} </code>
-    If you want to refer to hexadecimal of any of the colors in your hash, you can simply do that:
+    <p>When we talk about <strong>Hashes</strong>, keys are defined on code and may be any object you want to. This means that hashes are, by default, unordered lists (of course you can order them, using code, if you need to). They are very useful when you need to reference values to information that can make you easily access them. In my researches, I’ve seen a pretty didactic example of hash usage. Imagine you create a hash to store hexadecimal values of colors: <br><br>
+    <code> hexacolors = { ‘Red' => #FF0000 , ‘Blue’ => #0000FF , ‘Black' => #000000 , ‘White’ => #FFFFFF} </code> <br><br>
+    If you want to refer to hexadecimal of any of the colors in your hash, you can simply do that:<br><br>
     <code> >> hexacolors[‘Black'] <br> => #000000 </code></p>
     <p>There are other particular aspects about hashes: because of Ruby construction on these variable types, hashes are way faster for lookups compared to arrays. Also, it is possible to return a default value when you search for a a value of a key that doesn’t exist.</p>
     <p>That said, next time you’re not 100% confident about using arrays or hashes, ask yourself:

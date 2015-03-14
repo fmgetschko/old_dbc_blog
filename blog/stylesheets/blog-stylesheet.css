@@ -74,3 +74,10 @@ margin-bottom: 5%;
   font-size: 20px;
   padding-left: 10%;
 }
+
+code{
+  display: block;
+  background-color:#eee; /*#f7f7f9*/
+  padding: 7.5px;
+  color: blue;
+}
