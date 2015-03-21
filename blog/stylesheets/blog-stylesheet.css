@@ -80,4 +80,11 @@ code{
   background-color:#eee; /*#f7f7f9*/
   padding: 7.5px;
   color: blue;
+  line-height: 20px;
+}
+
+iframe{
+  width:100%;
+  height:700px;
+  border:none;
 }

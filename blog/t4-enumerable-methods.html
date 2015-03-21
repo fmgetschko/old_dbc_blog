@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <title>Fernanda M. M. Getschko</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow:400,700|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+</head>
+
+<main>
+
+<section class="border">
+
+  <section class="post">
+    <!-- Put title on h1, subtitle on h2 and date on h4-->
+    <h1>Analyze your data set:</h1>
+    <h3>How to structure data for analysis using Enumerable#group_by</h3>
+    <h4 id="date">March 21, 2015</h4>
+    <!--Put content here-->
+    <p>This week, we’ve been told to choose a public method to discourse about. Among some interesting options, I’ve decided to talk aboutEnumerable#group_by method. The beauty of this method is that it allows you to quickly prepare any set of data to an analysis, according to any rule you want to apply on this analysis.</p>
+    <p>The simplest way to understand both the method and how it helps you to analyze data is to think of histograms. Histogram is a graphic that shows you the frequencies of a set of data, and it’s a powerful analytics tool. Well, let’s say that we want to know if I’ve been a good student in college. I can share with you my grades dataset. It would look like this:<br><br>
+    <code>my_grades = %w{ A A+ A+ A B+ B B+ A- A- B- B A- C+ A- A+ A B A A+ B+ A A A C A A- B+ B+ A-}</code> <br><br>
+    By simply looking to it, it’s a little difficult to say anything. But, then, group by is here to save us! The Enumerable#group_by allows us to group our information according to some block we define. In this case, we want to group my grades according to the grades themselves. To do that, we would simply do:<br><br>
+    <code>grades_hash = my_grades.group_by {|grade| grade}</code><br>
+    And we would get this:
+    <code>=> {"A"=>["A", "A", "A", "A", "A", "A", "A", "A"], "A+"=>["A+", "A+", "A+", "A+"], "B+"=>["B+", "B+", "B+", "B+", "B+"], "B"=>["B", "B", "B"], "B-"=>["B-"], "A-"=>["A-","A-", "A-", "A-", "A-", "A-"], "C+"=>["C+"], "C"=>["C"]}</code><br>
+    We could make it even clearer by doing this:<br><br>
+    <code>grades_hash.inject(Hash.new(0)) { |hash, pair| hash[pair[0]] = pair[1].length; hash}</code><br>
+    And then, my grade history got so readable:
+    <code>=> {"A"=>8, "A+"=>4, "B+"=>5, "B"=>3, "B-"=>1, "A-"=>6, "C+"=>1, "C"=>1}</code><br>
+    See it in a histogram chart:<br>
+    <img src ="./chart.png"/></p>
+    <p>If I wanted to simplify the analysis to A-B-C, I could keep using Enumerable#group_by and try this:<br><br>
+    <code> grades_hash = my_grades.group_by {|grade| grade[0]}</code> <br>
+    And then I would get this:<br><br>
+    <code>>> {"A"=>["A", "A+", "A+", "A", "A-", "A+", "A", "A", "A+", "A", "A", "A", "A", "A-", "A-", "A-", "A-", "A-"], "B"=>["B+", "B", "B+", "B-", "B+", "B+", "B+", "B", "B"], "C"=>["C+", "C"]}</code></p>
+    <p>And just like i have just replaced my old block 'grade' for 'grade[0]', group by accepts any block you want to. Another example:<br><br>
+    <code> (1..6).group_by{|i| i%3}<br>
+    => {1=>[1, 4], 2=>[2, 5], 0=>[3, 6]}
+    </code>
+    </p>
+    <p>You see? So, that’s how Enumerable#group_by can be your best friend on setting up an analysis frame!</p>
+  </section>
+</section>
+
+</main>
