@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <title>Fernanda M. M. Getschko</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow:400,700|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+</head>
+
+<main>
+
+<section class="border">
+
+  <section class="post">
+    <!-- Put title on h1, subtitle on h2 and date on h4-->
+    <h1>JS vs Ruby</h1>
+    <h3>So alike and sooo diferent...!</h3>
+    <h4 id="date">April 12, 2015</h4>
+    <!--Put content here-->
+    <p>So, after one week of JavaScript, we're supposed to talk about one difference between JS and Ruby. Although they're both object-oriented languages, they are very different when you put them into practice, and that means, code. I chose to talk about looping in Ruby and JS.</p>
+    <p>Both in Ruby and JS, there are many different ways to write a loop. In general, both logic and operators to write loops and conditions are pretty similar. Still, you don't have to dig much to find the differences in their syntaxes.</p>
+    <p>I'll approach first the while loop. For that, I'll use an example of EJS book. A loop in JS would look like this:</p>
+    <p><code>while (counter < 10) {<br>
+      result *= 2;<br>
+      counter ++;<br>
+    }</code></p>
+    <p>It is possible to write this code in a very similar way in Ruby. It would be like this:</p>
+    <p><code>while counter < 10 do<br>
+      result *= 2<br>
+      counter +=1<br>
+    end</code></p>
+  <p>That works, but, in fact, there's a leaner way to do the same in Ruby. It would be like this:</p>
+  <p><code> 10.times {result *= 2}</code></p>
+  <p>And this is the magic of Ruby! Ruby is designed to be very lean, and there's always a way to do what you want very easily (and shortly).</p>
+
+  <p>Well, the same applies to for loops. EJS example:</p>
+    <p><code>for (var number = 0; number<=12; number+=2)<br>
+      console.log(number);</code></p>
+    <p>Using for loop in Ruby, it would be like this:</p>
+    <p><code>for i in 0..6 {puts i*2}</code></p>
+  <p>And there's also the loop that iterates over an array. In JS, it would look like this:</p>
+  <p><code>for (x in person){<br>
+      text += person[x];<br>
+      }</code></p>
+  <p>This type of loop is made with #each in Ruby, and looks like this:</p>
+  <p><code>person.each {|name| text += name}</code></p>
+  <p>In short, the loop logics in Ruby and JS are very similar. The biggest difference is that usually, Ruby syntax is simpler and leaner. The good news is that, once you're familiar with any of the logics, you won't have dificculties in applying the loops in the other language!</p>
+  </section>
+</section>
+
+</main>
