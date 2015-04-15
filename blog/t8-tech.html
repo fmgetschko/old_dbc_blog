@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <title>Fernanda M. M. Getschko</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow:400,700|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+</head>
+
+<main>
+
+<section class="border">
+
+  <section class="post">
+    <!-- Put title on h1, subtitle on h2 and date on h4-->
+    <h1>Active Record:</h1>
+    <h3>Using Ruby syntax to manage your database</h3>
+    <h4 id="date">April 15, 2015</h4>
+    <!--Put content here-->
+    <p>Among several options that we were given this week, I chose to talk about a very interesting subject that is Active Record. Before I start talking about it, it is essential to talk about something else: Object-Relational Mapping, or ORM. So, what is ORM? ORM is a technique that connects tables in a relational database to objects in an application. By making this connection, ORM allows developers to use these object's properties and relationships to manage the database tables. And that means managing databases without having to write SQL statements!</p>
+    <p>And what about Active Record? Well, Active Record is an ORM framework. More specifically, the ORM framework found in Rails. So, if you build your application in Rails, you can use Active Record to represent your DB tables as models, that is, instances (or objects) of Ruby classes.</p>
+    <p>Let me exemplify that. Imagine that you have a table of international direct dialings of several countries. This table's name is idds and it has two fields: country_name and idd_code. You want to insert a new record in this table. Normally, you would use SQL to do that, and it would look like this:</p>
+    <p><code>INSERT INTO idds (country_name, idd_code) VALUES ('Brazil', 55);</code></p>
+    <p>But, if you're using Active Record, you can make the same thing by creating an instance of a class Idd, using Ruby! Like this:</p>
+    <p><code>idd = Idd.new <br>
+            idd.country_name = "Brazil"<br>
+            idd.idd_code = 55<br>
+            idd.save</code></p>
+    <p>And, not only you can do that, but Active Record also allows you to validate the data to be inserted - like validation of non-empty values, or duplicated information - before it gets written (or persisted) to the database.</p>
+    <p>That looks awesome, doesn't it? So, from now on, create, read, update and delete information without writing a single SQL statement, and be happy! :)</p>
+  </section>
+</section>
+
+</main>
