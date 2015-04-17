@@ -7,7 +7,7 @@
   position: static;
   top:15%;
   border: 1px solid #eaeaea;
-  width: 65%;
+  width: 90%;
   float: left;
   background-image: url("../blank_notebook_paper_2.jpg");
 }
@@ -15,7 +15,7 @@
 .post{
   margin-left: 11%;
   display: inline-block;
-  width: 80%;
+  width: 88%;
   font-family: "Shadows into light two";
   padding-top: 1.1%;
 }
@@ -50,7 +50,7 @@ p{
 
 /* SIDEBAR STYLE */
 .column{
-  position: absolute;
+  /*position: absolute;*/
   top:17.5%;
   right: 0%;
   padding-right: 5%;
@@ -84,7 +84,8 @@ code{
 }
 
 iframe{
-  width:100%;
+  width:75%;
   height:700px;
   border:none;
+  padding-top:1.75%;
 }
