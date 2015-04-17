@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head><link rel="stylesheet" type="text/css" href="./cheat-sheet-style.css"></head>
+
+    <header>Ruby Enumerable</header>
+    <body>
+        <section id="summary">
+            Enumerable is a built-in mixin used to iterate and transform collection classes. As enumerable is often used to compare different values in a collection, the &lt=> (comparison operator) is heavily relied upon in enumerable.
+        </section>
+        <section class="content">
+            <ul>
+                <li>#each_with_index
+                    <ul>
+                        <li>Definition: This method iterates over the object using two parameters: the object and its index. </li>
+                        <li>Syntax: variable.each_with_index { |obj, i| block} </li>
+                    </ul>
+                </li>
+                <li>#grep
+                    <ul>
+                        <li>Definition: Returns an array of elements that contain the pattern specified.</li>
+                        <li>Syntax 1: output = variable.grep(/PATTERN/) { |obj| block}  </li>
+                        <li>Syntax 2: variable.grep(/PATTERN/) </li>
+                    </ul>
+                </li>
+                <li>#include?
+                    <ul>
+                        <li>Definition:Returns TRUE if the element specified is found in the object, and FALSE otherwise. </li>
+                        <li>Syntax: variable.include?(element) </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="content">
+           <ul>
+                <li>#inject
+                    <ul>
+                        <li>Definition: Returns the accumulated object of the result of the block operation. Typically, the first element in the vertical bars is the accumulator object and the second is the iterator. </li>
+                        <li>Syntax: collection.inject(initial) { |memo, obj| block }</li>
+                    </ul>
+                </li>
+                <li>#map <!-- = collect -->
+                    <ul>
+                        <li>Definition: map, also known as collect, works the same way as the each method except it returns the result at the end. Also, map has a destructive method map!. If nothing is done to an element in the object called on, it will be replaced by nil. </li>
+                        <li>Syntax: variable.map { |obj| block } </li>
+                    </ul>
+                </li>
+                <li>#max
+                    <ul>
+                        <li>Definition: Returns the element with the largest value. Can be applied to numbers and strings. An optional block can be added to make a different type of comparison. </li>
+                        <li>Syntax: variable.max(n) {|a,b| block } </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="content">
+            <ul>
+                <li>#min
+                    <ul>
+                        <li>Definition: Returns the element with the smallest value. Can be applied to numbers and strings. An optional block can be added to make a different type of comparison. </li>
+                        <li>Syntax: variable.min(n) {|a,b| block } </li>
+                    </ul>
+                </li>
+                <li>#select
+                    <ul>
+                        <li>Definition: Returns an array of elements that follow the conditions specified in the block. </li>
+                        <li>Syntax: variable.select {|i| block } </li>
+                    </ul>
+                </li>
+                <li>#sort_by
+                    <ul>
+                        <li>Definition: Returns the sorted version of the elements in the object according to the block. </li>
+                        <li>Syntax: variable.sort_by {|obj| block } </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </body>
