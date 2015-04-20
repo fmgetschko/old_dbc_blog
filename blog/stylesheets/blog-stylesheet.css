@@ -2,14 +2,15 @@
 /* POST STYLE AND POSITION */
 .border{
   margin-left: 5%;
-  margin-top: 4%;
-  margin-bottom: 4%;
-  position: static;
+  /*margin-top: 4%;
+  margin-bottom: 4%;*/
+/*position: static;*/
   top:15%;
   border: 1px solid #eaeaea;
-  width: 90%;
+  /*width: 90%;*/
   float: left;
   background-image: url("../blank_notebook_paper_2.jpg");
+  display: inline-block;
 }
 
 .post{
@@ -17,9 +18,15 @@
   display: inline-block;
   width: 88%;
   font-family: "Shadows into light two";
-  padding-top: 1.1%;
+  padding-top: 1%;
 }
 
+iframe{
+  width:75%;
+  height:800px;
+  border:none;
+  padding-top:1.75%;
+}
 
 /*TITLE STYLE*/
 h1{
@@ -43,36 +50,8 @@ h3{
 
 /* CONTENT STYLE */
 
-
 p{
   padding-top: 1.8%;
-}
-
-/* SIDEBAR STYLE */
-.column{
-  /*position: absolute;*/
-  top:17.5%;
-  right: 0%;
-  padding-right: 5%;
-  float: right;
-  width: 20%;
-  text-align: center;
-}
-
-.postlist{
-list-style-type: none;
-border:1px solid #BFC5FF;
-border-radius: 2px;
-box-shadow:0 3px 0 #565eb2;
-background-color: #e2e4ff;
-padding: 2%;
-margin-bottom: 5%;
-}
-
-#list-title{
-  color:#cca063;
-  font-size: 20px;
-  padding-left: 10%;
 }
 
 code{
@@ -83,9 +62,32 @@ code{
   line-height: 20px;
 }
 
-iframe{
-  width:75%;
-  height:700px;
-  border:none;
-  padding-top:1.75%;
+
+/* SIDEBAR STYLE */
+.column{
+  /*position: absolute;*/
+  top:17.5%;
+  right: 0%;
+  padding-right: 2.5%;
+  float: right;
+  width: 20%;
+  text-align: center;
 }
+
+.postlist{
+list-style-type: none;
+border:1px solid #BFC5FF;
+border-radius: 2px;
+box-shadow:3px 3px 0 #565eb2;
+background-color: #e2e4ff;
+padding: 1.5%;
+margin-bottom: 2.5%;
+}
+
+#list-title{
+  color:#cca063;
+  font-size: 18px;
+  padding-left: 10%;
+}
+
+
